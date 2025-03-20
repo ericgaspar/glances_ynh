@@ -6,8 +6,8 @@ After=network.target
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/venv/bin/python3 __INSTALL_DIR__/venv/bin/glances -w
+WorkingDirectory=__INSTALL_DIR__/venv/bin/
+ExecStart=__INSTALL_DIR__/venv/bin/python3 glances -w -B 127.0.0.1
 Restart=always
 RestartSec=3
 
